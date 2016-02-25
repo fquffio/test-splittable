@@ -22,7 +22,7 @@ class TogetherTest extends \PHPUnit_Framework_TestCase
     /**
      * Test `second()` method.
      */
-    public function testFirst()
+    public function testSecond()
     {
         $instance = new Together();
         $this->assertEquals('Fquffio\\TestPackage2\\MyOtherClass::__toString()', $instance->second());
