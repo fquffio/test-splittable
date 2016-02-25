@@ -16,7 +16,7 @@ class TogetherTest extends \PHPUnit_Framework_TestCase
     public function testFirst()
     {
         $instance = new Together();
-        $this->assertEquals('Fquffio\\TestPackage1\\MyClass::__toString()', $instance->first());
+        $this->assertEquals('Fquffio\\TestPackage1\\MyClass', $instance->first());
     }
 
     /**

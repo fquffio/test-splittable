@@ -16,6 +16,6 @@ class MyClassTest extends \PHPUnit_Framework_TestCase
     public function testToString()
     {
         $instance = new MyClass();
-        $this->assertEquals('Fquffio\\TestPackage1\\MyClass::__toString()', (string)$instance);
+        $this->assertEquals('Fquffio\\TestPackage1\\MyClass', (string)$instance);
     }
 }
