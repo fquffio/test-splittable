@@ -9,7 +9,7 @@ php:
 sudo: false
 
 before_script:
-  - composer install --prefer-source --no-interaction
+  - composer install --prefer-dist --no-interaction
 
 script:
   - vendor/bin/phpunit
