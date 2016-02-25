@@ -1,0 +1,26 @@
+{
+    "name": "fquffio/test-package2",
+    "description": "This is another test package.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paolo Cuffiani",
+            "email": "paolo.cuffiani@chialab.it"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*",
+        "squizlabs/php_codesniffer": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fquffio\\TestPackage2\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fquffio\\TestPackage2\\Test\\": "tests"
+        }
+    }
+}

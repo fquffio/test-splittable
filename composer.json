@@ -1,0 +1,31 @@
+{
+    "name": "fquffio/test-splittable",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paolo Cuffiani",
+            "email": "paolo.cuffiani@chialab.it"
+        }
+    ],
+    "require": {
+        "fquffio/test-package1": "dev-master",
+        "fquffio/test-package2": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*",
+        "squizlabs/php_codesniffer": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fquffio\\TestSplittable\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fquffio\\TestPackage1\\": "./packages/package1",
+            "Fquffio\\TestPackage2\\": "./packages/package2",
+            "Fquffio\\TestSplittable\\Test\\": "tests"
+        }
+    }
+}
