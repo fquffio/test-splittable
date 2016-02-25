@@ -15,6 +15,6 @@ class MyClass
      */
     public function __toString()
     {
-        return __CLASS__ . '::' . __METHOD__ . '()';
+        return __METHOD__ . '()';
     }
 }
