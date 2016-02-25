@@ -23,8 +23,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Fquffio\\TestPackage1\\": "./packages/package1",
-            "Fquffio\\TestPackage2\\": "./packages/package2",
+            "Fquffio\\TestPackage1\\": "./packages/package1/src",
+            "Fquffio\\TestPackage2\\": "./packages/package2/src",
             "Fquffio\\TestSplittable\\Test\\": "tests"
         }
     }
