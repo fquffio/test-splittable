@@ -18,7 +18,7 @@ before_script:
 
 script:
   - vendor/bin/phpunit
-  - vendor/bin/phpcs -n -p --extensions=php --standard=PSR-2 ./src ./tests
+  - vendor/bin/phpcs -n -p --extensions=php --standard=PSR2 ./src ./tests
 
 notifications:
   email: false
