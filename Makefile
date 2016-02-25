@@ -85,7 +85,7 @@ component-%:
 	- (git remote add $* git@github.com:$(OWNER)/$(COMPONENTS_PREFIX)$*.git -f 2> /dev/null)
 	- (git branch -D $* 2> /dev/null)
 	git checkout -b $*
-	git filter-branch --prune-empty --subdirectory-filter $(COMPONENTS_DIR)/$(shell php -r "echo ucfirst('$*');") -f $*
+	git filter-branch --prune-empty --subdirectory-filter $(COMPONENTS_DIR)/$(shell php -r "echo strtolower('$*');") -f $*
 	git push -f $* $*:$(CURRENT_BRANCH)
 	git checkout $(CURRENT_BRANCH) > /dev/null
 
